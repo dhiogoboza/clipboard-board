@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Clipboard Board</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://use.fontawesome.com/65c1efcf81.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div id="container">
+        <div id="child">
+            <h1>Clipboard Board</h1>
+            <div class="item">
+                <!-- Target -->
+                <textarea id="foo1" class="text" rows="1"></textarea>
+                <span class="group-button">
+                    <!-- Trigger -->
+                    <button class="btn" data-clipboard-target="#foo1">
+                        <i class="fa fa-clipboard" alt="Copy to clipboard"></i>
+                    </button>
+                </span>
+                
+            </div>
+            
+            <div class="item">
+                <!-- Target -->
+                <textarea id="foo2" class="text" rows="1"></textarea>
+                <span class="group-button">
+                    <!-- Trigger -->
+                    <button class="btn" data-clipboard-target="#foo2">
+                        <i class="fa fa-clipboard" alt="Copy to clipboard"></i>
+                    </button>
+                </span>
+                
+            </div>
+            
+            <div class="item">
+                <!-- Target -->
+                <textarea id="foo3" class="text" rows="1"></textarea>
+                <span class="group-button">
+                    <!-- Trigger -->
+                    <button class="btn" data-clipboard-target="#foo3">
+                        <i class="fa fa-clipboard" alt="Copy to clipboard"></i>
+                    </button>
+                </span>
+                
+            </div>
+            
+            <div class="item">
+                <!-- Target -->
+                <textarea id="foo4" class="text" rows="1"></textarea>
+                <span class="group-button">
+                    <!-- Trigger -->
+                    <button class="btn" data-clipboard-target="#foo4">
+                        <i class="fa fa-clipboard" alt="Copy to clipboard"></i>
+                    </button>
+                </span>
+                
+            </div>
+        <div>
+        
+        <div id="tools">
+            <button class="btn" >
+                Add <i class="fa fa-plus" onclick="addItem()" alt="Copy to clipboard"></i>
+            </button>
+            
+            <button class="btn">
+                Clear <i class="fa fa-times" onclick="clearAll()" alt="Copy to clipboard"></i>
+            </button>
+        </div>
+    </div>
+  </body>
+</html>
